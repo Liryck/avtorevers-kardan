@@ -1,0 +1,17 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/slick';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: sans-serif;
+}
+
+.conteiner {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+@import 'base/media';
