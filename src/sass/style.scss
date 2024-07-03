@@ -1,17 +1,31 @@
 @import 'libs/bootstrap-reboot.min';
-@import 'libs/fonts';
-@import 'libs/slick';
 
 @import 'base/variables';
-@import 'base/mixins';
 
 * {
-    font-family: sans-serif;
+	font-family: Montserrat;
+	font-weight: 400;
+	line-height: normal;
 }
 
 .conteiner {
-    max-width: 950px;
-    margin: 0 auto;
+	width: 1400px;
+	margin: 0 auto;
 }
 
+@import 'blocks/header';
+@import 'blocks/mob-menu';
+@import 'blocks/button';
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/advantages';
+@import 'blocks/types';
+@import 'blocks/signs';
+@import 'blocks/services';
+@import 'blocks/cta';
+@import 'blocks/steps';
+@import 'blocks/text';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/modal';
 @import 'base/media';

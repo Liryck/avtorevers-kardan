@@ -1,0 +1,46 @@
+.title {
+	margin: 0;
+	color: $title-color;
+	font-size: 36px;
+	line-height: 54px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&_fz30 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	&_fz24 {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	&_fz20 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	
+	&_tal {
+		text-align: left;
+	}
+
+	&_black {
+		color: $text-color;
+	}
+
+	&_mt10 {
+		display: block;
+		margin-top: 10px;
+	}
+
+	&_mb10 {
+		margin-bottom: 10px;
+	}
+
+	&_m10 {
+		margin: 10px 0;
+	}
+}

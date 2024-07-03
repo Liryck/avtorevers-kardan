@@ -1,0 +1,12 @@
+.text {
+	padding: $section-padding;
+	width: 100%;
+	min-height: 500px;
+	p {
+		color: $text-color;
+		font-size: 18px;
+		line-height: 27px;
+		font-weight: 400;
+	}
+
+}

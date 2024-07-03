@@ -1,0 +1,36 @@
+.types {
+	width: 100%;
+	min-height: 400px;
+	padding: $section-padding;
+	background: #fff;
+
+	&__wrapper {
+		width: 100%;
+		margin-top: 50px;
+		display: grid;
+		grid-template: minmax(200px, auto) / repeat(5, 1fr);
+		gap: 30px;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__img {
+		width: 90%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	&__descr {
+		margin-top: 20px;
+		font-size: 16px;
+		line-height: 24px;
+		color: $text-color;
+		font-weight: 400;
+		text-align: center;
+	}
+}

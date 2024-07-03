@@ -1,0 +1,16 @@
+.signs {
+	padding: $section-padding;
+	width: 100%;
+	min-height: 400px;
+	background: $main-gradient;
+
+	&__list {
+		margin: 40px 0;
+		li {
+			color: $title-color;
+			font-size: 24px;
+			line-height: 36px;
+			list-style-type: decimal;
+		}
+	}
+}
