@@ -2,11 +2,31 @@
 	padding: $section-padding;
 	width: 100%;
 	min-height: 500px;
+
+	&_mt90 {
+		margin-top: 90px;
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
+
 	p {
 		color: $text-color;
 		font-size: 18px;
-		line-height: 27px;
+		line-height: 30px;
 		font-weight: 400;
+	}
+
+	&__list {
+		&_number {
+			list-style-type: decimal;
+		}
+
+		li {
+			color: $text-color;
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 400;
+		}
 	}
 
 }

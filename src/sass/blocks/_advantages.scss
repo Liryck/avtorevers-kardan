@@ -4,6 +4,10 @@
 	min-height: 400px;
 	background-color: #fff;
 
+	&_pt60 {
+		padding-top: 60px;
+	}	
+
 	&__wrapper {
 		background: $main-gradient;
 		width: 100%;

@@ -18,29 +18,27 @@
 
 	&__step {
 		position: relative;
-		z-index: 1;
-		margin-left: 50px;
-		padding-left: 10px;
+		margin-left: 30px;
 		color: $text-color;
-		font-size: 30px;
+		font-size: 26px;
 		line-height: 40px;
 		font-weight: 600;
-		&::marker {
-			z-index: 1;
-			color: #fff;
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			z-index: -1;
-			display: block;
-			top: 0;
-			left: -45px;
-			width: 40px;
-			height: 40px;
-			border-radius: 100%;
-			background: $main-gradient;
-		}
+		// &::marker {
+		// 	z-index: 1;
+		// 	color: #fff;
+		// }
+		// &::before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	z-index: -1;
+		// 	display: block;
+		// 	top: 0;
+		// 	left: -45px;
+		// 	width: 40px;
+		// 	height: 40px;
+		// 	border-radius: 100%;
+		// 	background: $main-gradient;
+		// }
 	}
 
 

@@ -1,0 +1,60 @@
+.price {
+    padding-top: 40px;
+    width: 100%;
+	min-height: 700px;
+	background: #fff;
+
+    &_mt90 {
+        margin-top: 90px;
+    }
+
+    &__wrapper {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    &__table {
+        width: 100%;
+        margin-top: 30px;
+
+        &:nth-child(1n) {
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            padding: 10px 30px;
+        }
+        th {
+            font-size: 24px;
+            font-weight: 700;
+            color: $title-color;
+            background: $main-gradient;
+            &:nth-child(2) {
+                text-align: center;
+            }
+        }
+
+        td {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            color: $text-color;
+
+            &:nth-child(1) {
+                width: 75%;
+            }
+            &:nth-child(2) {
+                width: 25%;
+                text-align: center;
+            }
+        }
+
+        tr {
+            border-bottom: 1px solid $first-color;
+
+            &:hover {
+                background: rgba($color: $first-color, $alpha: .3);
+            }
+        }
+    }
+}

@@ -4,6 +4,10 @@
 	min-height: 300px;
 	background: $main-gradient;
 
+	&_bgw {
+		background: #fff;
+	}
+
 	&__form {
 		margin-top: 40px;
 		width: 100%;

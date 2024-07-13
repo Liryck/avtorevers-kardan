@@ -4,6 +4,11 @@
 	min-height: 400px;
 	background: #fff;
 
+	&_mt90 {
+		margin-top: 90px;
+		padding: $section-padding;
+	}
+
 	&__wrapper {
 		background: $main-gradient;
 		width: 100%;
@@ -11,6 +16,10 @@
 		border-radius: 40px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+
+		&_mt30 {
+			margin-top: 30px;
+		}
 	}
 
 	&__left {
