@@ -2,7 +2,46 @@
 	width: 100%;
 	height: calc(100vh - 90px);
 	margin-top: 90px;
-	background: url(../../img/main_bg-remont-cardan.jpg) center center/cover no-repeat;
+	
+	&_kardan-bg {
+		background: url(../../img/main-bg/main_bg-remont-cardan.jpg) center center/cover no-repeat;
+	}
+
+	&_diagnostyka-bg {
+		background: url(../../img/main-bg/diagnostyka-kardana-avtorevers.jpg) center center/cover no-repeat;
+	}
+
+	&_balans-bg {
+		background: url(../../img/main-bg/balansuvannya-kardana-avtorevers.jpg) center center/cover no-repeat;
+	}
+
+	// &_pidshipnyk-bg {
+	// 	background: url(../../img/main-bg/) center center/cover no-repeat;
+	// }
+
+	&_shrus-bg {
+		background: url(../../img/main-bg/zamina-shrusa-kardana-avtorevers.jpg) center center/cover no-repeat;
+	}
+
+	&_vygotovlennya-bg {
+		background: url(../../img/main-bg/vygotovlennya-kardana-avtorevers.jpg) center center/cover no-repeat;
+	}
+
+	&_shliceva-bg {
+		background: url(../../img/main-bg/shliceva-kardana-avtorevers-avtorevers.jpg) center center/cover no-repeat;
+	}
+
+	&_rul-bg {
+		background: url(../../img/main-bg/remont-rulyovyi-val-avtorevers.jpg) center center/cover no-repeat;
+	}
+
+	&_zamina-val-bg {
+		background: url(../../img/main-bg/zamina-rulyovyi-val-avtorevers.jpg) center center/cover no-repeat;
+	}
+
+	&_hrest-rul-bg {
+		background: url(../../img/main-bg/zamina-hrestovyny-rulyovogo-vala-avtorevers.jpg) center center/cover no-repeat;
+	}
 
 	&__wrapper {
 		height: calc(100vh - 90px);
@@ -10,13 +49,12 @@
 		display: grid;
 		grid-template: auto / repeat(2, 1fr);
 		grid-auto-rows: auto;
-		column-gap: 40px;
 		align-items: center;
 	}
 
 	&__left {
 		display: flex;
-		justify-content: end;
+		justify-content: center;
 	}
 	
 	&__img {

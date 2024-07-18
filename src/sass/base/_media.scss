@@ -161,6 +161,9 @@
 			&-input {
 				height: 40px;
 				font-size: 24px;
+				&_h100 {
+					height: 100px;
+				}
 			}
 		}
 	}
@@ -310,7 +313,9 @@
 
 	.cta {
 		&__form {
-			grid-template-columns: repeat(2, 1.9fr) 1.2fr;
+			&-input {
+				font-size: 22px;
+			}
 		}
 	}
 
@@ -408,7 +413,13 @@
 
 	.cta {
 		&__form {
-			grid-template-columns: 1fr;
+			gap: 20px;
+			&-string {
+				grid-template-columns: 1fr;
+				&_col3 {
+					grid-template-columns: 1fr;
+				}
+			}
 		}
 	}
 
@@ -612,10 +623,19 @@
 
 	.cta {
 		padding: 50px 0;
+		&__form {
+			&-input {
+				font-size: 20px;
+			}
+		}
 	}
 
 	.steps {
 		padding-top: 50px;
+
+		&_pb60 {
+			padding-bottom: 50px;
+		}
 
 		&__list {
 			margin-top: 20px;

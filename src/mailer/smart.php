@@ -2,7 +2,10 @@
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$email = $_POST['email'];
+$car = $_POST['car'];
+$model = $_POST['model'];
+$year = $_POST['year'];
+$message = $_POST['message'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -18,7 +21,7 @@ $mail->Password = '';                           // Наш пароль от ящ
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('', 'Pulse');   // От кого письмо 
+$mail->setFrom('', 'Avtorevers Cardan');   // От кого письмо 
 $mail->addAddress('');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -28,12 +31,15 @@ $mail->addAddress('');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с сайта Пулсометры';
+$mail->Subject = 'Заявка з сайта';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
+		Нова заявка з сайта <br> 
+	Імя: ' . $name . ' <br>
+	Номер телефону: ' . $phone . '<br>
+	Марка авто: ' . $car . '<br>
+	Модель: ' . $model . '<br>
+	Рік випуску: ' . $year . '<br>
+	Повідомлення: ' . $message . '<br>;
 
 if(!$mail->send()) {
     return false;
