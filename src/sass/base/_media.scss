@@ -740,13 +740,14 @@
 				margin-bottom: 25px;
 			}
 
-			.form {
+			.form-modal {
 				&__input {
-					height: 50px;
-					font-size: 20px;
-					text-align: center;
-					margin-bottom: 25px;
-					padding: 10px 15px;
+					height: 30px;
+					padding: 5px 10px;
+
+					&_h100 {
+						height: 70px;
+					}
 				}
 			}
 
@@ -770,5 +771,21 @@
 		&__link {
 			font-size: 15px;
 		}
+	}
+
+	.overlay {
+		.modal {
+			&__close {
+				top: -40px;
+			}
+			.form-modal {
+				margin-top: 0;
+				&__input {
+					margin: 7px 0;
+					font-size: 18px;
+				}
+			}
+		}
+		
 	}
 }

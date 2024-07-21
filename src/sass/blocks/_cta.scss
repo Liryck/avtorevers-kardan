@@ -43,6 +43,10 @@
 			border-radius: 28px;
 			color: $first-color;
 
+			&:focus-visible {
+				outline: none;
+			}
+
 			&_h100 {
 				height: 150px;
 			}
