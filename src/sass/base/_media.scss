@@ -1,5 +1,5 @@
 @media (max-width: 1400px) {
-	.conteiner {
+	.container {
 		width: 1140px;
 	}
 
@@ -27,6 +27,10 @@
 		&__icon {
 			width: 32px;
 			height: 32px;
+		}
+
+		&__title {
+			font-size: 26px;
 		}
 
 		&__descr {
@@ -62,7 +66,7 @@
 }
 
 @media (max-width: 1200px) {
-	.conteiner {
+	.container {
 		width: 960px;
 	}
 
@@ -93,6 +97,10 @@
 		&__link {
 			font-size: 22px;
 			line-height: 30px;
+		}
+
+		&__title {
+			font-size: 22px;
 		}
 
 		&__descr {
@@ -182,7 +190,7 @@
 
 
 @media (max-width: 992px) {
-	.conteiner {
+	.container {
 		width: 720px;
 	}
 
@@ -226,6 +234,10 @@
 		.title {
 			font-size: 22px;
 			line-height: 33px;
+		}
+
+		&__title {
+			font-size: 20px;
 		}
 
 		&__link {
@@ -354,7 +366,7 @@
 
 
 @media (max-width: 768px) {
-	.conteiner {
+	.container {
 		width: 540px;
 	}
 
@@ -443,6 +455,7 @@
 		&__map {
 			border-radius: 40px 40px 0 0;
 			height: 350px;
+			width: 100%;
 		}
 
 		&__left {
@@ -475,7 +488,7 @@
 
 
 @media (max-width: 576px) {
-	.conteiner {
+	.container {
 		width: 85%;
 	}
 
@@ -530,6 +543,10 @@
 		.title {
 			font-size: 20px;
 			line-height: 30px;
+		}
+
+		&__title {
+			margin-bottom: 15px;
 		}
 
 		&__link {
@@ -685,6 +702,10 @@
 		&__link {
 			justify-content: start;
 			font-size: 15px;
+
+			&_mfz14 {
+				font-size: 14px;
+			}
 		}
 
 		&__icon {
@@ -720,6 +741,10 @@
 			grid-template-columns: 1fr;
 		}
 
+		&__link {
+			font-size: 15px;
+		}
+
 		.liryck {
 			font-size: 12px;
 		}
@@ -753,6 +778,72 @@
 
 			.title_mb20 {
 				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 440px) {
+
+	.promo {
+		&_kardan-bg {
+			background: url(../img/main-bg/mob/main_bg-remont-cardan.webp) center center/cover no-repeat;
+		}
+	
+		&_diagnostyka-bg {
+			background: url(../img/main-bg/mob/diagnostyka-kardana-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_balans-bg {
+			background: url(../img/main-bg/mob/balansuvannya-kardana-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_pidshipnyk-bg {
+			background: url(../img/main-bg/mob/zamina-pidshipnyka-kardana-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_shrus-bg {
+			background: url(../img/main-bg/mob/zamina-shrusa-kardana-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_vygotovlennya-bg {
+			background: url(../img/main-bg/mob/vygotovlennya-kardana-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_shliceva-bg {
+			background: url(../img/main-bg/mob/shliceva-kardana-avtorevers-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_rul-bg {
+			background: url(../img/main-bg/mob/remont-rulyovyi-val-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_zamina-val-bg {
+			background: url(../img/main-bg/mob/zamina-rulyovyi-val-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_hrest-rul-bg {
+			background: url(../img/main-bg/mob/zamina-hrestovyny-rulyovogo-vala-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_zamina-kardan-bg {
+			background: url(../img/main-bg/mob/zamina-kardana-avtorevers.webp) center center/cover no-repeat;
+		}
+	
+		&_ustanovka-kardan-bg {
+			background: url(../img/main-bg/mob/znyattya-ustanovka-kardana-avtorevers.webp) center center/cover no-repeat;
+		}
+	}
+
+}
+
+@media (max-width: 359px) {
+	.contacts {
+
+		&__link {
+
+			&_mfz14 {
+				font-size: 13px;
 			}
 		}
 	}

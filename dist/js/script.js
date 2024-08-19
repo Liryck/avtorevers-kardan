@@ -48,7 +48,7 @@ $(document).ready(function(){
 	// });
 
 	$('.modal__close').on('click', function() {
-		$('.overlay, #consultation, #thx, #order').fadeOut('slow');
+		$('.overlay, #thx, #order').fadeOut('slow');
 	});
 
 	// Form Validate
@@ -75,16 +75,15 @@ $(document).ready(function(){
 		});
 	};
 
-	validateForms('#consultation form');
+	// validateForms('#cta');
+	validateForms('#cta');
 	validateForms('#order form');
 
 	// Phone mask
 
 	$('[name=phone]').mask("+38 (099) 999-99-99");
 
-	// Sending email
-
-	$('form, form-modal').submit(function(e) {
+	$('#cta').submit(function(e) {
 		e.preventDefault();
 
 		if (!$(this).valid()) {
@@ -97,17 +96,43 @@ $(document).ready(function(){
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			$('#order, #cta').fadeOut();
-			$('.overlay, #thx').fadeIn('slow');
+			$('#cta').fadeOut();
+			$('.cta__thx').fadeIn('slow');
 
-			$('form').trigger('reset');
+			$('#cta').trigger('reset');
 
 			dataLayer.push({
-				'event': 'FormSubmit', // Название события
-				'formId': $form.attr('[data-id=form]'), // ID формы (или используйте другой уникальный идентификатор)
+				'event': 'formSubmit', // Название события
+				'formId': $form.attr('#cta'), // ID формы (или используйте другой уникальный идентификатор)
 			});
 		});
 		return false;
 	});
 
+	$('#order form').submit(function(e) {
+        e.preventDefault();
+
+        if(!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#order').fadeOut();
+            $('.overlay, #thx').fadeIn('slow');
+
+            $('#order form').trigger('reset');
+			
+			dataLayer.push({
+				'event': 'formSubmit',
+				'formId': $form.attr('#order form'),
+			});
+		});
+		
+        return false;
+    });
 })

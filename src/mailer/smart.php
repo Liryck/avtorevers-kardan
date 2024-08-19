@@ -14,15 +14,15 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'mail.adm.tools';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '';                 // Наш логин
-$mail->Password = '';                           // Наш пароль от ящика
+$mail->Username = 'order@avtoreverscardan.com.ua';                 // Наш логин
+$mail->Password = 'T6Ge645rTu';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('', 'Avtorevers Cardan');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
+$mail->setFrom('order@avtoreverscardan.com.ua', 'Автореверс Кардан');   // От кого письмо 
+$mail->addAddress('avtoreverssto@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

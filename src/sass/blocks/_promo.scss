@@ -4,51 +4,51 @@
 	margin-top: 90px;
 	
 	&_kardan-bg {
-		background: url(../../img/main-bg/main_bg-remont-cardan.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/main_bg-remont-cardan.webp) center center/cover no-repeat;
 	}
 
 	&_diagnostyka-bg {
-		background: url(../../img/main-bg/diagnostyka-kardana-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/diagnostyka-kardana-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_balans-bg {
-		background: url(../../img/main-bg/balansuvannya-kardana-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/balansuvannya-kardana-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_pidshipnyk-bg {
-		background: url(../../img/main-bg/zamina-pidshipnyka-kardana-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/zamina-pidshipnyka-kardana-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_shrus-bg {
-		background: url(../../img/main-bg/zamina-shrusa-kardana-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/zamina-shrusa-kardana-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_vygotovlennya-bg {
-		background: url(../../img/main-bg/vygotovlennya-kardana-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/vygotovlennya-kardana-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_shliceva-bg {
-		background: url(../../img/main-bg/shliceva-kardana-avtorevers-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/shliceva-kardana-avtorevers-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_rul-bg {
-		background: url(../../img/main-bg/remont-rulyovyi-val-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/remont-rulyovyi-val-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_zamina-val-bg {
-		background: url(../../img/main-bg/zamina-rulyovyi-val-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/zamina-rulyovyi-val-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_hrest-rul-bg {
-		background: url(../../img/main-bg/zamina-hrestovyny-rulyovogo-vala-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/zamina-hrestovyny-rulyovogo-vala-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_zamina-kardan-bg {
-		background: url(../../img/main-bg/zamina-kardana-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/zamina-kardana-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&_ustanovka-kardan-bg {
-		background: url(../../img/main-bg/znyattya-ustanovka-kardana-avtorevers.jpg) center center/cover no-repeat;
+		background: url(../../img/main-bg/znyattya-ustanovka-kardana-avtorevers.webp) center center/cover no-repeat;
 	}
 
 	&__wrapper {
@@ -74,7 +74,12 @@
 		display: block;
 	}
 
-	
+	&__title {
+		margin-bottom: 20px;
+		font-size: 30px;
+		font-weight: 500;
+		color: #fff;
+	}
 
 	&__icon {
 		width: 36px;
@@ -110,13 +115,13 @@
 		color: $title-color;
 		font-size: 24px;
 		line-height: 36px;
-		font-weight: 600;
+		font-weight: 500;
 		&-list {
 			li {
 				color: $title-color;
 				font-size: 24px;
 				line-height: 36px;
-				font-weight: 600;
+				font-weight: 500;
 			}
 			
 		}
