@@ -23,6 +23,11 @@
 		background: #ffffff;
 		box-shadow:  0 7px 14px #cfcdcd;
 		border: 2px solid $first-color;
+		transition: 0.5s all;
+
+		&:hover {
+			transform: scale(1.03);
+		}
 	}
 
 	&__img {

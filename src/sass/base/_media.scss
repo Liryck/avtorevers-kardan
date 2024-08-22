@@ -781,6 +781,33 @@
 			}
 		}
 	}
+
+	.phone {
+		bottom: 25px;
+		right: 25px;
+
+		&__desctop {
+			display: none;
+		}
+
+		&__mob {
+			display: block;
+		}
+
+		&__link {
+			width: 50px;
+			height: 50px;
+			&:hover {
+				transform: translateX(10px);
+				transition: 0.5s linear;
+			}
+		}
+
+		&__icon {
+			width: 50px;
+			height: 50px;
+		}
+	}
 }
 
 @media (max-width: 440px) {

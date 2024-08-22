@@ -20,9 +20,9 @@ $mail->Username = 'order@avtoreverscardan.com.ua';                 // Наш л�
 $mail->Password = 'T6Ge645rTu';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
- 
+
 $mail->setFrom('order@avtoreverscardan.com.ua', 'Автореверс Кардан');   // От кого письмо 
-$mail->addAddress('avtoreverssto@gmail.com');     // Add a recipient
+$mail->addAddress('liryckbragin@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
