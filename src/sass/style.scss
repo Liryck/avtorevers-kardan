@@ -4,7 +4,7 @@
 @import 'base/fonts';
 
 * {
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 	line-height: normal;
 }
@@ -15,6 +15,7 @@
 }
 
 @import 'blocks/header';
+@import 'blocks/pop-up';
 @import 'blocks/mob-menu';
 @import 'blocks/button';
 @import 'blocks/promo';

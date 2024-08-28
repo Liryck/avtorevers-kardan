@@ -71,10 +71,23 @@
 	}
 
 	.header {
+		&__sitename {
+			display: none;
+		}
 		&__menu {
 			&-item {
 				padding: 0 10px;
 			}
+		}
+	}
+
+	.pop-up {
+		&__text, &__link, span {
+			font-size: 17px;
+		}
+
+		&__close {
+			right: 30px;
 		}
 	}
 
@@ -112,6 +125,10 @@
 					line-height: 30px;
 				}
 			}
+		}
+
+		&__404 {
+			font-size: 200px;
 		}
 	}
 
@@ -208,6 +225,14 @@
 			}
 		}
 
+		&__sitename {
+			display: block;
+			color: $first-color;
+			&:hover {
+				color: $second-color;
+			}
+		}
+
 		&__menu, .button, .header__lang {
 			display: none;
 		}
@@ -218,6 +243,14 @@
 
 		&__hamburger {
 			display: block;
+		}
+	}
+
+	.pop-up {
+		top: 70px;
+
+		&__link {
+			display: none;
 		}
 	}
 
@@ -238,6 +271,7 @@
 
 		&__title {
 			font-size: 20px;
+			text-align: center;
 		}
 
 		&__link {
@@ -259,6 +293,10 @@
 					line-height: 27px;
 				}
 			}
+		}
+
+		&__404 {
+			font-size: 125px;
 		}
 	}
 
@@ -368,6 +406,23 @@
 @media (max-width: 768px) {
 	.container {
 		width: 540px;
+	}
+
+	.header {
+		&__sitename {
+			display: none;
+		}
+	}
+
+	.pop-up {
+		&__text, &__link, span {
+			font-size: 17px;
+			text-align: center;
+		}
+
+		&__close {
+			right: 20px;
+		}
 	}
 
 	.promo {
@@ -514,6 +569,21 @@
 
 		&__hamburger {
 			margin-left: 10px;
+		}
+	}
+
+	.pop-up {
+		top: 60px;
+
+		&__text {
+			span {
+				display: none;
+			}
+		}
+
+		&__close {
+			right: 13px;
+			font-size: 23px;
 		}
 	}
 
@@ -806,6 +876,10 @@
 		&__icon {
 			width: 50px;
 			height: 50px;
+		}
+
+		&__descr {
+			height: 40px;
 		}
 	}
 }
