@@ -741,7 +741,12 @@
 		&__wrapper {
 			margin-top: 15px;
 			overflow-y: scroll;
+			scrollbar-width: none;
 			height: 600px;
+
+			&::-webkit-scrollbar {
+				display: none; /* Для Chrome, Safari и Edge */
+			}
 		}
 
 		p {

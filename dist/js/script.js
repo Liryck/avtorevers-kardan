@@ -104,55 +104,57 @@ document.addEventListener('DOMContentLoaded', () => {
 	$('[name=phone]').mask("+38 (099) 999-99-99");
 
 	$('#cta').submit(function(e) {
-	e.preventDefault();
+		e.preventDefault();
 
-	if (!$(this).valid()) {
-	return;
-	}
+		if (!$(this).valid()) {
+			return;
+		}
 
-	$.ajax({
-	type: "POST",
-	url: "mailer/smart.php",
-	data: $(this).serialize()
-	}).done(function() {
-	$(this).find("input").val("");
-	$('#cta').fadeOut();
-	$('.cta__thx').fadeIn('slow');
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#cta').fadeOut();
+			$('.cta__thx').fadeIn('slow');
 
-	$('#cta').trigger('reset');
+			$('#cta').trigger('reset');
 
-	dataLayer.push({
-		'event': 'formSubmit', // Название события
-		'formId': $form.attr('#cta'), // ID формы (или используйте другой уникальный идентификатор)
+			dataLayer.push({
+				'event': 'formSubmit', // Название события
+				'formId': $form.attr('#cta'), // ID формы (или используйте другой уникальный идентификатор)
+			});
+		});
+		return false;
 	});
-	});
-	return false;
-	});
+
+
 
 	$('#order form').submit(function(e) {
-	e.preventDefault();
+		e.preventDefault();
 
-	if(!$(this).valid()) {
-	return;
-	}
+		if(!$(this).valid()) {
+			return;
+		}
 
-	$.ajax({
-	type: "POST",
-	url: "mailer/smart.php",
-	data: $(this).serialize()
-	}).done(function() {
-	$(this).find("input").val("");
-	$('#order').fadeOut();
-	$('.overlay, #thx').fadeIn('slow');
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#order').fadeOut();
+			$('.overlay, #thx').fadeIn('slow');
 
-	$('#order form').trigger('reset');
-	
-	dataLayer.push({
-		'event': 'formSubmit',
-		'formId': $form.attr('#order form'),
-	});
-	});
+			$('#order form').trigger('reset');
+		
+			dataLayer.push({
+				'event': 'formSubmit',
+				'formId': $form.attr('#order form'),
+			});
+		});
 
-	return false;
+		return false;
 	});
 });

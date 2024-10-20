@@ -151,12 +151,19 @@
 	&__submenu {
 		display: none;
 		position: absolute;
+		overflow-y: auto;
+		scrollbar-width: none;
 		z-index: 9;
 		top: 0;
 		left: -50%;
 		margin-top: 54px;
 		width: 260px;
 		max-height: calc(100vh - 90px);
+
+		&::-webkit-scrollbar {
+			display: none; /* Для Chrome, Safari и Edge */
+		}
+
 
 		&_active {
 			display: block;
