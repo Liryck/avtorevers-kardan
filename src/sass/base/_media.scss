@@ -46,6 +46,12 @@
 		}
 	}
 
+	.reviews {
+		&__img {
+			width: 300px;
+		}
+	}
+
 	.steps {
 		&__step {
 			font-size: 24px;
@@ -151,6 +157,12 @@
 
 		&__descr {
 			margin-top: 10px;
+		}
+	}
+
+	.reviews {
+		&__img {
+			width: 275px;
 		}
 	}
 
@@ -341,6 +353,12 @@
 		}
 	}
 
+	.reviews {
+		&__img {
+			width: 200px
+		}
+	}
+
 	.cities {
 		&__wrapper {
 			grid-template: auto / 1fr;
@@ -457,6 +475,18 @@
 		}
 	}
 
+	.reviews {
+		&__imgs {
+			flex-wrap: wrap;
+		}
+
+		&__img {
+			&:last-child {
+				margin-top: 25px;
+			}
+		}
+	}
+
 	.cities {
 		&__list {
 			li {
@@ -514,7 +544,7 @@
 		}
 
 		&__left {
-			height: 350px;
+			min-height: 350px;
 		}
 
 		&__link {
@@ -683,6 +713,16 @@
 
 		&__wrapper {
 			gap: 20px;
+		}
+	}
+
+	.reviews {
+		&__img {
+			width: 75%;
+			margin-top: 25px;
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 	}
 
@@ -966,7 +1006,10 @@
 
 	.contacts {
 		&__link {
-			font-size: 15px;
+			margin-top: 10px;
+			display: flex;
+			flex-direction: column;
+			font-size: 14px;
 		}
 	}
 

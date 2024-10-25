@@ -1,0 +1,23 @@
+.reviews {
+    padding-bottom: 50px;
+	width: 100%;
+	min-height: 100px;
+	background-color: #fff;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__imgs{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__img {
+        width: 400px;
+        height: auto;
+    }
+}
